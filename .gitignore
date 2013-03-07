@@ -4,3 +4,6 @@
 *.jar
 *.war
 *.ear
+
+# algs4-data
+algs4-data/*

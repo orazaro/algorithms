@@ -29,5 +29,5 @@ all: $(PROGRAMS) $(PROGRAMC) $(PROGRAMJ)
 	$(JC) $^
 
 clean:
-	rm -f *.o *.a $(PROGRAMS) $(PROGRAMC) $(PROGRAMJ)
+	rm -f *.o *.a *.class $(PROGRAMS) $(PROGRAMC) $(PROGRAMJ)
 

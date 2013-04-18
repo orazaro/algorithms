@@ -1,4 +1,6 @@
-public class Stack<Item> {
+import java.util.Iterator;
+
+public class Stack<Item> implements Iterable<Item> {
     private Item[] s;
     private int N = 0;
 
@@ -28,5 +30,15 @@ public class Stack<Item> {
         if(N > 0 && N == s.length/4)    // if 1/4 of capacity
             resize(s.length/2);         // shrink to 1/2 of capacity
         return item;
+    }
+
+    public Iterator<Item> iterator(){
+        return new ReverseArrayIterator();
+    }
+    private class ReverseArrayIterator implements Iterator<Item> {
+        private int i = N;
+        public boolean hasNext()    { return i > 0;         }
+        public void remove()         { /* not supported */   }
+        public Item next()          { return s[--i];        }
     }
 }

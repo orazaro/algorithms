@@ -1,3 +1,4 @@
+import java.util.Iterator;
 class StackTest {
     public static void main(String[] args) {
         //StackOfStrings stack = new LinkedStackOfStrings();
@@ -9,6 +10,10 @@ class StackTest {
             String s = StdIn.readString();
             if(s.equals("-")) StdOut.println(stack.pop());
             else stack.push(s);
+        }
+        StdOut.println("Stack remains:");
+        for(String s : (Iterable<String>)stack){
+            StdOut.println(s);
         }
     }
 }

@@ -6,7 +6,9 @@ public class Experiment
         Double[] a = new Double[N];
         for (int i = 0; i < N; i++)
             a[i] = StdRandom.uniform();
-        Selection.sort(a);
+        //Selection.sort(a);
+        //Insertion.sort(a);
+        Shell.sort(a);
         for(int i = 0; i < N; i++)
             StdOut.println(a[i]);
     }

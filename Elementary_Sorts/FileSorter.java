@@ -6,7 +6,8 @@ public class FileSorter
     {
         File directory = new File(args[0]);
         File[] files = directory.listFiles();
-        Insertion.sort(files);
+        //Insertion.sort(files);
+        Selection.sort(files);
         for(int i = 0; i < files.length; i++)
             StdOut.println(files[i].getName());
 

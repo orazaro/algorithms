@@ -1,3 +1,9 @@
+
+/****
+    java -ea MyProgram      // enable assertions
+    java -da MyProgram      // disable assertions (default)
+*/
+
 public class Experiment
 {
     public static void main(String[] args)

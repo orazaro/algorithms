@@ -17,7 +17,8 @@ public class Experiment
         Quick.sort(a);
         double time = stopwatch.elapsedTime();
         StdOut.println(time);
-        for(int i = 0; i < N; i++)
-            StdOut.println(a[i]);
+        if (false)
+            for(int i = 0; i < N; i++)
+                StdOut.println(a[i]);
     }
 }

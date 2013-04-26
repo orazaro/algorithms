@@ -13,10 +13,11 @@ public class Experiment
         for (int i = 0; i < N; i++)
             a[i] = StdRandom.uniform();
         Stopwatch stopwatch = new Stopwatch();
-        Merge.sort(a);
+        //Merge.sort(a);
+        Quick.sort(a);
         double time = stopwatch.elapsedTime();
         StdOut.println(time);
-        //for(int i = 0; i < N; i++)
-        //    StdOut.println(a[i]);
+        for(int i = 0; i < N; i++)
+            StdOut.println(a[i]);
     }
 }

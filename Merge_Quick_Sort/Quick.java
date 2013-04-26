@@ -5,14 +5,14 @@ public class Quick
         int i = lo, j = hi+1;
         while (true)
         {
-            while (less(a[++i], a[lo])) // find item from left which is less then lo 
+            while (less(a[++i], a[lo])) // find item from left which is great then lo 
                 if (i == hi) break;
 
-            while (less(a[lo], a[--j])) // find item from right which is greater then lo
+            while (less(a[lo], a[--j])) // find item from right which is less then lo
                 if (j == lo) break;
 
             if (i >= j) break;          // check if pointers cross
-            exch(a, i, j);              // swap
+            exch(a, i, j);              // swap wrong positioned items
         }
 
         exch(a, lo, j);                 // swap lo with parthioning item (pivot)

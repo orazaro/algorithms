@@ -14,11 +14,13 @@ public class Experiment
             a[i] = StdRandom.uniform();
         Stopwatch stopwatch = new Stopwatch();
         //Merge.sort(a);
-        Quick.sort(a);
+        Quick3way.sort(a);
+        Comparable median = Quick.select(a,a.length/2);
         double time = stopwatch.elapsedTime();
         StdOut.println(time);
-        if (false)
+        if (true)
             for(int i = 0; i < N; i++)
                 StdOut.println(a[i]);
+        StdOut.printf("median=%s\n",median);
     }
 }

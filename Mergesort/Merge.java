@@ -21,6 +21,8 @@ public class Merge
         assert isSorted(a, lo, hi);
     }
 
+    private static int CUTOFF = 7;
+
     private static void sort(Comparable[] a, Comparable[] aux, int lo, int hi)
     {
         if (hi <= lo) return;

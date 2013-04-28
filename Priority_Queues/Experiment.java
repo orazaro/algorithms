@@ -9,7 +9,8 @@ public class Experiment
     public static void main(String[] args)
     {
         int N = Integer.parseInt(args[0]);
-        UnorderedMaxPQ<Double> pq = new UnorderedMaxPQ<Double>(1000);
+        //UnorderedMaxPQ<Double> pq = new UnorderedMaxPQ<Double>(1000);
+        MaxPQ<Double> pq = new MaxPQ<Double>(1000);
         for (int i = 0; i < N; i++)
         {
            Double a = StdRandom.uniform();

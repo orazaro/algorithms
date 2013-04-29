@@ -4,7 +4,8 @@ public class FrequencyCounter
     public static void main(String[] args)
     {
         int minlen = Integer.parseInt(args[0]);
-        ST<String, Integer> st = new ST<String, Integer>();
+        //ST<String, Integer> st = new ST<String, Integer>();
+        BST<String, Integer> st = new BST<String, Integer>();
         while (!StdIn.isEmpty())
         {
             String word = StdIn.readString();
@@ -17,6 +18,7 @@ public class FrequencyCounter
         for (String word : st.keys())
             if (st.get(word) > st.get(max))
                 max = word;
+        StdOut.printf("size=%d\n", st.size());
         StdOut.println(max + " " + st.get(max));
     }
 }

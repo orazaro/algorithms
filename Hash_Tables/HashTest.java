@@ -9,6 +9,9 @@ public class HashTest
         return hash;
     }
 
+    public static int hash(String key)
+    { return (key.hashCode() & 0x7fffffff) % 1025; }
+
     public static void main(String[] args)
     {
         Boolean b = true;   StdOut.println(b.hashCode());
@@ -17,5 +20,8 @@ public class HashTest
     
         String s = "TestHornerMethod";
         StdOut.printf("%d %d\n", s.hashCode(), Horner(s));
+        s = "polygenelubricants";
+        StdOut.printf("%d %d\n", s.hashCode(), Horner(s));
+        StdOut.printf("%s %x %d\n", s, s.hashCode(), hash(s));
     }
 }

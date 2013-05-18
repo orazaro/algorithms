@@ -1,10 +1,10 @@
 
-public class Graph
+public class MyGraph
 {
     private final int V;
     private Bag<Integer>[] adj;
 
-    public Graph(int V)
+    public MyGraph(int V)
     {
         this.V = V;
         adj = (Bag<Integer>[]) new Bag[V];

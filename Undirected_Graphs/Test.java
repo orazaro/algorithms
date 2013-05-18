@@ -3,7 +3,7 @@ public class Test {
     public static void main(String[] args) {
         //In in = new In(args[0]);
         //Graph G = new Graph(in);
-        Graph G = new Graph(3);
+        MyGraph G = new MyGraph(3);
         G.addEdge(0,1);
         G.addEdge(0,2);
         G.addEdge(2,1);
